@@ -1,0 +1,24 @@
+{
+    "name": "jsanbae/rangeao",
+    "description": "Una herramienta para generar rangos a partir de arrays o strings",
+    "type": "library",
+    "keywords": ["range","number","rangeao"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Javier Sánchez",
+            "email": "jsan5709@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rangeao\\" : "src/rangeao/"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
