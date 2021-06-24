@@ -10,23 +10,25 @@ composer require jsanbae/rangeao
 
 ## Ejemplo de uso
 
+### De Secuencia a rango literal
 ```
 $secuencia = [0,1,2,3,4,15,16,17,28];
 $Rangeao = new Rangeao($secuencia);
-$Rangeao->toLitealRange();
+$Rangeao->toLiteralRange();
+```
+Devuelve:
+```
+['0-4', '15-17', 28]
+```
 
+### De rango literal a secuencia
+```
 $rangoLiteral = ['0-2',5, '7-11'];
 $Rangeao = new Rangeao($rangoLiteral);
 $Rangeao->toSequence();
 ```
-
 Devuelve:
-
 ```
-//de secuencia a rango literal
-['0-4', '15-17', 28]
-
-//de rango literal a secuencia
 [0,1,2,5,7,8,9,10,11]
 ```
  
